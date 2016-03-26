@@ -15,6 +15,7 @@
 		94E693C01CA688810011F511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E693BF1CA688810011F511 /* Assets.xcassets */; };
 		94E693C31CA688810011F511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E693C11CA688810011F511 /* LaunchScreen.storyboard */; };
 		94E693CE1CA688810011F511 /* MarvelBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E693CD1CA688810011F511 /* MarvelBrowserTests.m */; };
+		94E693E01CA6F78F0011F511 /* TestingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E693DF1CA6F78F0011F511 /* TestingAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		94E693C91CA688810011F511 /* MarvelBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E693CD1CA688810011F511 /* MarvelBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MarvelBrowserTests.m; path = MarvelBrowserTests/MarvelBrowserTests.m; sourceTree = SOURCE_ROOT; };
 		94E693CF1CA688810011F511 /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Tests.plist"; path = "MarvelBrowserTests/Info-Tests.plist"; sourceTree = SOURCE_ROOT; };
+		94E693DE1CA6F78F0011F511 /* TestingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingAppDelegate.h; sourceTree = "<group>"; };
+		94E693DF1CA6F78F0011F511 /* TestingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 			children = (
 				94E693B31CA688810011F511 /* AppDelegate.h */,
 				94E693B41CA688810011F511 /* AppDelegate.m */,
+				94E693DE1CA6F78F0011F511 /* TestingAppDelegate.h */,
+				94E693DF1CA6F78F0011F511 /* TestingAppDelegate.m */,
 				94E693B61CA688810011F511 /* ViewController.h */,
 				94E693B71CA688810011F511 /* ViewController.m */,
 				94E693CD1CA688810011F511 /* MarvelBrowserTests.m */,
@@ -209,6 +214,7 @@
 				94E693B81CA688810011F511 /* ViewController.m in Sources */,
 				94E693BE1CA688810011F511 /* MarvelBrowser.xcdatamodeld in Sources */,
 				94E693B51CA688810011F511 /* AppDelegate.m in Sources */,
+				94E693E01CA6F78F0011F511 /* TestingAppDelegate.m in Sources */,
 				94E693B21CA688810011F511 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
