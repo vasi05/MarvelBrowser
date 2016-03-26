@@ -40,8 +40,8 @@
 		94E693C21CA688810011F511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94E693C41CA688810011F511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94E693C91CA688810011F511 /* MarvelBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94E693CD1CA688810011F511 /* MarvelBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarvelBrowserTests.m; sourceTree = "<group>"; };
-		94E693CF1CA688810011F511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E693CD1CA688810011F511 /* MarvelBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MarvelBrowserTests.m; path = MarvelBrowserTests/MarvelBrowserTests.m; sourceTree = SOURCE_ROOT; };
+		94E693CF1CA688810011F511 /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Tests.plist"; path = "MarvelBrowserTests/Info-Tests.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +87,10 @@
 				94E693B41CA688810011F511 /* AppDelegate.m */,
 				94E693B61CA688810011F511 /* ViewController.h */,
 				94E693B71CA688810011F511 /* ViewController.m */,
-				94E693B91CA688810011F511 /* Main.storyboard */,
-				94E693BF1CA688810011F511 /* Assets.xcassets */,
-				94E693C11CA688810011F511 /* LaunchScreen.storyboard */,
+				94E693CD1CA688810011F511 /* MarvelBrowserTests.m */,
+				94E693CF1CA688810011F511 /* Info-Tests.plist */,
 				94E693C41CA688810011F511 /* Info.plist */,
-				94E693BC1CA688810011F511 /* MarvelBrowser.xcdatamodeld */,
+				94E693BF1CA688810011F511 /* Assets.xcassets */,
 				94E693B01CA688810011F511 /* Supporting Files */,
 			);
 			path = MarvelBrowser;
@@ -100,6 +99,9 @@
 		94E693B01CA688810011F511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				94E693C11CA688810011F511 /* LaunchScreen.storyboard */,
+				94E693BC1CA688810011F511 /* MarvelBrowser.xcdatamodeld */,
+				94E693B91CA688810011F511 /* Main.storyboard */,
 				94E693B11CA688810011F511 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -108,8 +110,6 @@
 		94E693CC1CA688810011F511 /* MarvelBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				94E693CD1CA688810011F511 /* MarvelBrowserTests.m */,
-				94E693CF1CA688810011F511 /* Info.plist */,
 			);
 			path = MarvelBrowserTests;
 			sourceTree = "<group>";
@@ -365,7 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MarvelBrowserTests/Info.plist;
+				INFOPLIST_FILE = "MarvelBrowserTests/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vasile.test.MarvelBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,7 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MarvelBrowserTests/Info.plist;
+				INFOPLIST_FILE = "MarvelBrowserTests/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vasile.test.MarvelBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +404,7 @@
 				94E693D41CA688810011F511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94E693D51CA688810011F511 /* Build configuration list for PBXNativeTarget "MarvelBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +413,7 @@
 				94E693D71CA688810011F511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
