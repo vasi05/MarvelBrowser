@@ -66,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				94E693AF1CA688810011F511 /* MarvelBrowser */,
-				94E693CC1CA688810011F511 /* MarvelBrowserTests */,
 				94E693AE1CA688810011F511 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,13 +104,6 @@
 				94E693B11CA688810011F511 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		94E693CC1CA688810011F511 /* MarvelBrowserTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MarvelBrowserTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
