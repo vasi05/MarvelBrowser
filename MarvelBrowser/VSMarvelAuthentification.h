@@ -14,8 +14,6 @@
 @property (nonatomic, strong, readonly) NSString *publicKey;
 @property (nonatomic, strong, readonly) NSString *privateKey;
 
-
--(NSString *) timeStampedKeys;
 -(NSString *) MD5OfString:(NSString *)str;
 -(NSString *) urlParameters;
 

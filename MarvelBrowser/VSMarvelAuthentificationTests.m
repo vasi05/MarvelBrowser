@@ -49,15 +49,6 @@
     XCTAssertEqualObjects(md5String, @"900150983cd24fb0d6963f7d28e17f72");
 }
 
--(void)testTimeStampedKeys_ShouldConcatenateTimeStampPrivateKeyPublicKey{
-    
-    sut.timeStamp = @"TimeStamp";
-    sut.privateKey = @"Private";
-    sut.publicKey = @"Public";
-
-    XCTAssertEqualObjects(sut.timeStampedKeys, @"TimeStampPrivatePublic");
- }
-
 -(void)testTimeStamp_ShouldChangeAcrossDiferentInstances{
     
     VSMarvelAuthentification *sut2 = [[VSMarvelAuthentification alloc] init];
