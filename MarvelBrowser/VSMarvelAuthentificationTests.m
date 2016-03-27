@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "VSMarvelAuthentification.h"
+#import "TestingMarvelAuthentification.h"
 
 @interface VSMarvelAuthentification (Testing)
 @property (nonatomic, strong, readwrite) NSString *timeStamp;
@@ -26,6 +27,19 @@
 -(void)setUp{
     [super setUp];
     sut = [[VSMarvelAuthentification alloc] init];
+}
+
+-(void)testURLParameters_ShouldHaveTimestampPublicKeyAndHash{
+    
+    TestingMarvelAuthentification *sutWithFakeMD5 = [[TestingMarvelAuthentification alloc] init];
+    sutWithFakeMD5.timeStamp = @"Timestamp";
+    sutWithFakeMD5.privateKey = @"Private";
+    sutWithFakeMD5.publicKey = @"Public";
+    
+    NSString * parameters = [sutWithFakeMD5 urlParameters];
+    
+    XCTAssertEqualObjects(parameters,@"&ts=Timestamp&apikey=Public&hash=MD5TimestampPrivatePublicMD5");
+    
 }
 
 -(void)testMD5String_ShouldYeldKnownResult{

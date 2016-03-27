@@ -19,6 +19,7 @@
 		94EDCFF61CA826940076692F /* VSMarvelAuthentificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDCFF51CA826940076692F /* VSMarvelAuthentificationTests.m */; };
 		94EDCFF91CA8274F0076692F /* VSMarvelAuthentification.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDCFF81CA8274F0076692F /* VSMarvelAuthentification.m */; };
 		94EDCFFC1CA82C470076692F /* MarvelKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDCFFB1CA82C470076692F /* MarvelKeys.m */; };
+		94EDCFFF1CA85DA80076692F /* TestingMarvelAuthentification.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDCFFE1CA85DA80076692F /* TestingMarvelAuthentification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		94EDCFF81CA8274F0076692F /* VSMarvelAuthentification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMarvelAuthentification.m; sourceTree = "<group>"; };
 		94EDCFFA1CA82C470076692F /* MarvelKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarvelKeys.h; sourceTree = "<group>"; };
 		94EDCFFB1CA82C470076692F /* MarvelKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarvelKeys.m; sourceTree = "<group>"; };
+		94EDCFFD1CA85DA80076692F /* TestingMarvelAuthentification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingMarvelAuthentification.h; sourceTree = "<group>"; };
+		94EDCFFE1CA85DA80076692F /* TestingMarvelAuthentification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingMarvelAuthentification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				94EDCFF51CA826940076692F /* VSMarvelAuthentificationTests.m */,
 				94EDCFF71CA8274F0076692F /* VSMarvelAuthentification.h */,
 				94EDCFF81CA8274F0076692F /* VSMarvelAuthentification.m */,
+				94EDCFFD1CA85DA80076692F /* TestingMarvelAuthentification.h */,
+				94EDCFFE1CA85DA80076692F /* TestingMarvelAuthentification.m */,
 				94E693CF1CA688810011F511 /* Info-Tests.plist */,
 				94E693C41CA688810011F511 /* Info.plist */,
 				94E693BF1CA688810011F511 /* Assets.xcassets */,
@@ -230,6 +235,7 @@
 				94E693BE1CA688810011F511 /* MarvelBrowser.xcdatamodeld in Sources */,
 				94E693B51CA688810011F511 /* AppDelegate.m in Sources */,
 				94E693E01CA6F78F0011F511 /* TestingAppDelegate.m in Sources */,
+				94EDCFFF1CA85DA80076692F /* TestingMarvelAuthentification.m in Sources */,
 				94E693B21CA688810011F511 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

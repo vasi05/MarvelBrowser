@@ -8,7 +8,6 @@
 @property (nonatomic, strong, readwrite) NSString *timeStamp;
 @property (nonatomic, strong, readwrite) NSString *publicKey;
 @property (nonatomic, strong, readwrite) NSString *privateKey;
-@property (nonatomic, strong, readwrite) NSString *timeStampedKeys;
 @end
 
 @implementation VSMarvelAuthentification
@@ -52,5 +51,9 @@
     }
     
     return [ret copy];
+}
+
+-(NSString *)urlParameters{
+    return [NSString stringWithFormat:@"&ts=%@&apikey=%@&hash=%@",self.timeStamp,self.publicKey,[self MD5OfString:[self timeStampedKeys]]];
 }
 @end
