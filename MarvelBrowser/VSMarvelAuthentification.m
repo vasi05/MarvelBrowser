@@ -12,6 +12,27 @@
 
 @implementation VSMarvelAuthentification
 
+-(NSString *(^)(NSString *))calculateMD5{
+    if(!_calculateMD5){
+        _calculateMD5 = ^(NSString *str){
+            const char *cstr = [str UTF8String];
+            
+            unsigned char result[CC_MD5_DIGEST_LENGTH];
+            
+            CC_MD5(cstr, strlen(cstr), result);
+            
+            NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
+            for(int i = 0; i<CC_MD5_DIGEST_LENGTH; i++) {
+                [ret appendFormat:@"%02x",result[i]];
+            }
+            
+            return [ret copy];
+        };
+        
+    }
+    return _calculateMD5;
+}
+
 -(NSString *)timeStamp{
     if(!_timeStamp){
         _timeStamp = @([NSDate date].timeIntervalSinceReferenceDate).stringValue;
@@ -54,6 +75,6 @@
 }
 
 -(NSString *)urlParameters{
-    return [NSString stringWithFormat:@"&ts=%@&apikey=%@&hash=%@",self.timeStamp,self.publicKey,[self MD5OfString:[self timeStampedKeys]]];
+    return [NSString stringWithFormat:@"&ts=%@&apikey=%@&hash=%@",self.timeStamp,self.publicKey,self.calculateMD5([self timeStampedKeys])];
 }
 @end

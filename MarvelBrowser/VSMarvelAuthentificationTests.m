@@ -29,14 +29,27 @@
     sut = [[VSMarvelAuthentification alloc] init];
 }
 
--(void)testURLParameters_ShouldHaveTimestampPublicKeyAndHash{
+//-(void)testURLParameters_ShouldHaveTimestampPublicKeyAndHash{
+//    
+//    TestingMarvelAuthentification *sutWithFakeMD5 = [[TestingMarvelAuthentification alloc] init];
+//    sutWithFakeMD5.timeStamp = @"Timestamp";
+//    sutWithFakeMD5.privateKey = @"Private";
+//    sutWithFakeMD5.publicKey = @"Public";
+//    
+//    NSString * parameters = [sutWithFakeMD5 urlParameters];
+//    
+//    XCTAssertEqualObjects(parameters,@"&ts=Timestamp&apikey=Public&hash=MD5TimestampPrivatePublicMD5");
+//    
+//}
+
+-(void)testURLParameters_ShouldHaveTimestampPublicKeyAndHashConcatenated{
     
-    TestingMarvelAuthentification *sutWithFakeMD5 = [[TestingMarvelAuthentification alloc] init];
-    sutWithFakeMD5.timeStamp = @"Timestamp";
-    sutWithFakeMD5.privateKey = @"Private";
-    sutWithFakeMD5.publicKey = @"Public";
+    sut.timeStamp = @"Timestamp";
+    sut.privateKey = @"Private";
+    sut.publicKey = @"Public";
+    sut.calculateMD5 = ^(NSString *str){return [NSString stringWithFormat:@"MD5%@MD5",str];};
     
-    NSString * parameters = [sutWithFakeMD5 urlParameters];
+    NSString * parameters = [sut urlParameters];
     
     XCTAssertEqualObjects(parameters,@"&ts=Timestamp&apikey=Public&hash=MD5TimestampPrivatePublicMD5");
     
@@ -44,7 +57,7 @@
 
 -(void)testMD5String_ShouldYeldKnownResult{
     
-    NSString * md5String = [sut MD5OfString:@"abc"];
+    NSString * md5String = sut.calculateMD5(@"abc");
     
     XCTAssertEqualObjects(md5String, @"900150983cd24fb0d6963f7d28e17f72");
 }

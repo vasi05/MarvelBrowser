@@ -13,6 +13,7 @@
 @property (nonatomic, strong, readonly) NSString *timeStamp;
 @property (nonatomic, strong, readonly) NSString *publicKey;
 @property (nonatomic, strong, readonly) NSString *privateKey;
+@property (nonatomic, strong) NSString *(^calculateMD5)(NSString *);
 
 -(NSString *) MD5OfString:(NSString *)str;
 -(NSString *) urlParameters;
