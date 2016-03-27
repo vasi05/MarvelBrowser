@@ -13,24 +13,42 @@
 
 @end
 
-@implementation VSMarvelAuthentificationTests
+@implementation VSMarvelAuthentificationTests{
+    VSMarvelAuthentification *sut;
+}
 
--(void)testTimeStamp_ShouldChangeEveryCall{
+-(void)setUp{
+    [super setUp];
+    sut = [[VSMarvelAuthentification alloc] init];
+}
+
+-(void)testTimeStamp_ShouldChangeAcrossDiferentInstances{
     
-    NSString *timeStamp1 = [VSMarvelAuthentification timeStamp];
-    NSString *timeStamp2 = [VSMarvelAuthentification timeStamp];
+    VSMarvelAuthentification *sut2 = [[VSMarvelAuthentification alloc] init];
+    NSString *timeStamp1 = sut.timeStamp;
+    NSString *timeStamp2 = sut2.timeStamp;
     
     XCTAssertNotEqualObjects(timeStamp1, timeStamp2);
 }
 
+-(void)testTimeStamp_ShouldNotChangeAcrossSameInstance{
+
+    NSString *timeStamp1 = sut.timeStamp;
+    NSString *timeStamp2 = sut.timeStamp;
+    
+    XCTAssertEqualObjects(timeStamp1, timeStamp2);
+}
+
 -(void)testPublicKey_shouldHave32Characters{
-    NSString *publicKey = [VSMarvelAuthentification publicKey];
+   
+    NSString *publicKey = sut.publicKey;
     
     XCTAssertEqual(publicKey.length, 32);
 }
 
 -(void)testPrivateKey_shouldHave40Characters{
-    NSString *privateKey = [VSMarvelAuthentification privateKey];
+  
+    NSString *privateKey = sut.privateKey;
     
     XCTAssertEqual(privateKey.length, 40);
 }

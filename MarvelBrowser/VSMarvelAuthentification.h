@@ -10,8 +10,8 @@
 
 @interface VSMarvelAuthentification : NSObject
 
-+(NSString *)timeStamp;
-+(NSString *)publicKey;
-+(NSString *)privateKey;
+@property (nonatomic, strong, readonly) NSString *timeStamp;
+@property (nonatomic, strong, readonly) NSString *publicKey;
+@property (nonatomic, strong, readonly) NSString *privateKey;
 
 @end

@@ -9,18 +9,38 @@
 #import "VSMarvelAuthentification.h"
 #import "MarvelKeys.h"
 
+@interface VSMarvelAuthentification()
+
+@property (nonatomic, strong, readwrite) NSString *timeStamp;
+@property (nonatomic, strong, readwrite) NSString *publicKey;
+@property (nonatomic, strong, readwrite) NSString *privateKey;
+
+@end
+
 @implementation VSMarvelAuthentification
 
-+(NSString *)timeStamp{
-    return @([NSDate date].timeIntervalSinceReferenceDate).stringValue;
+
+
+-(NSString *)timeStamp{
+    if(!_timeStamp){
+        _timeStamp = @([NSDate date].timeIntervalSinceReferenceDate).stringValue;
+    }
+    return _timeStamp;
+    
 }
 
-+(NSString *)publicKey{
-    return MarvelPublicKey;
+-(NSString *)publicKey{
+    if(!_publicKey){
+        _publicKey = MarvelPublicKey;
+    }
+    return _publicKey;
 }
 
-+(NSString *)privateKey{
-    return MarvelPrivateKey;
+-(NSString *)privateKey{
+    if(!_privateKey){
+        _privateKey = MarvelPrivateKey;
+    }
+    return _privateKey;
 }
 
 @end
