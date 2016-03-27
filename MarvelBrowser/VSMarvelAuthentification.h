@@ -11,5 +11,7 @@
 @interface VSMarvelAuthentification : NSObject
 
 +(NSString *)timeStamp;
++(NSString *)publicKey;
++(NSString *)privateKey;
 
 @end

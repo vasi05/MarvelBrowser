@@ -18,6 +18,7 @@
 		94E693E01CA6F78F0011F511 /* TestingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E693DF1CA6F78F0011F511 /* TestingAppDelegate.m */; };
 		94EDCFF61CA826940076692F /* VSMarvelAuthentificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDCFF51CA826940076692F /* VSMarvelAuthentificationTests.m */; };
 		94EDCFF91CA8274F0076692F /* VSMarvelAuthentification.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDCFF81CA8274F0076692F /* VSMarvelAuthentification.m */; };
+		94EDCFFC1CA82C470076692F /* MarvelKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDCFFB1CA82C470076692F /* MarvelKeys.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		94EDCFF51CA826940076692F /* VSMarvelAuthentificationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMarvelAuthentificationTests.m; sourceTree = "<group>"; };
 		94EDCFF71CA8274F0076692F /* VSMarvelAuthentification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMarvelAuthentification.h; sourceTree = "<group>"; };
 		94EDCFF81CA8274F0076692F /* VSMarvelAuthentification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMarvelAuthentification.m; sourceTree = "<group>"; };
+		94EDCFFA1CA82C470076692F /* MarvelKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarvelKeys.h; sourceTree = "<group>"; };
+		94EDCFFB1CA82C470076692F /* MarvelKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarvelKeys.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				94E693B41CA688810011F511 /* AppDelegate.m */,
 				94E693DE1CA6F78F0011F511 /* TestingAppDelegate.h */,
 				94E693DF1CA6F78F0011F511 /* TestingAppDelegate.m */,
+				94EDCFFA1CA82C470076692F /* MarvelKeys.h */,
+				94EDCFFB1CA82C470076692F /* MarvelKeys.m */,
 				94E693B61CA688810011F511 /* ViewController.h */,
 				94E693B71CA688810011F511 /* ViewController.m */,
 				94E693CD1CA688810011F511 /* MarvelBrowserTests.m */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EDCFFC1CA82C470076692F /* MarvelKeys.m in Sources */,
 				94EDCFF91CA8274F0076692F /* VSMarvelAuthentification.m in Sources */,
 				94E693B81CA688810011F511 /* ViewController.m in Sources */,
 				94E693BE1CA688810011F511 /* MarvelBrowser.xcdatamodeld in Sources */,

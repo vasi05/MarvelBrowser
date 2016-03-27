@@ -23,4 +23,16 @@
     XCTAssertNotEqualObjects(timeStamp1, timeStamp2);
 }
 
+-(void)testPublicKey_shouldHave32Characters{
+    NSString *publicKey = [VSMarvelAuthentification publicKey];
+    
+    XCTAssertEqual(publicKey.length, 32);
+}
+
+-(void)testPrivateKey_shouldHave40Characters{
+    NSString *privateKey = [VSMarvelAuthentification privateKey];
+    
+    XCTAssertEqual(privateKey.length, 40);
+}
+
 @end

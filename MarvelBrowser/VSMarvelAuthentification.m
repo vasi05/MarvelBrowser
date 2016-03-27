@@ -7,11 +7,20 @@
 //
 
 #import "VSMarvelAuthentification.h"
+#import "MarvelKeys.h"
 
 @implementation VSMarvelAuthentification
 
 +(NSString *)timeStamp{
     return @([NSDate date].timeIntervalSinceReferenceDate).stringValue;
+}
+
++(NSString *)publicKey{
+    return MarvelPublicKey;
+}
+
++(NSString *)privateKey{
+    return MarvelPrivateKey;
 }
 
 @end
