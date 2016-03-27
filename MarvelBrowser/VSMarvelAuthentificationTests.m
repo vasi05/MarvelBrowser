@@ -1,14 +1,5 @@
-//
-//  VSMarvelAuthentificationTests.m
-//  MarvelBrowser
-//
-//  Created by Vasile Croitoru on 27/03/16.
-//  Copyright © 2016 Vasile Croitoru. All rights reserved.
-//
-
 #import <XCTest/XCTest.h>
 #import "VSMarvelAuthentification.h"
-#import "TestingMarvelAuthentification.h"
 
 @interface VSMarvelAuthentification (Testing)
 @property (nonatomic, strong, readwrite) NSString *timeStamp;
@@ -29,18 +20,6 @@
     sut = [[VSMarvelAuthentification alloc] init];
 }
 
-//-(void)testURLParameters_ShouldHaveTimestampPublicKeyAndHash{
-//    
-//    TestingMarvelAuthentification *sutWithFakeMD5 = [[TestingMarvelAuthentification alloc] init];
-//    sutWithFakeMD5.timeStamp = @"Timestamp";
-//    sutWithFakeMD5.privateKey = @"Private";
-//    sutWithFakeMD5.publicKey = @"Public";
-//    
-//    NSString * parameters = [sutWithFakeMD5 urlParameters];
-//    
-//    XCTAssertEqualObjects(parameters,@"&ts=Timestamp&apikey=Public&hash=MD5TimestampPrivatePublicMD5");
-//    
-//}
 
 -(void)testURLParameters_ShouldHaveTimestampPublicKeyAndHashConcatenated{
     

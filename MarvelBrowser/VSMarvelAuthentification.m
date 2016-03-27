@@ -59,21 +59,6 @@
      return [NSString stringWithFormat:@"%@%@%@", self.timeStamp, self.privateKey, self.publicKey];
 }
 
--(NSString *) MD5OfString:(NSString *)str{
-    const char *cstr = [str UTF8String];
-    
-    unsigned char result[CC_MD5_DIGEST_LENGTH];
-    
-    CC_MD5(cstr, strlen(cstr), result);
-    
-    NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
-    for(int i = 0; i<CC_MD5_DIGEST_LENGTH; i++) {
-        [ret appendFormat:@"%02x",result[i]];
-    }
-    
-    return [ret copy];
-}
-
 -(NSString *)urlParameters{
     return [NSString stringWithFormat:@"&ts=%@&apikey=%@&hash=%@",self.timeStamp,self.publicKey,self.calculateMD5([self timeStampedKeys])];
 }

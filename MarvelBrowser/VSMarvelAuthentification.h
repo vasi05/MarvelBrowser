@@ -1,10 +1,3 @@
-//
-//  VSMarvelAuthentification.h
-//  MarvelBrowser
-//
-//  Created by Vasile Croitoru on 27/03/16.
-//  Copyright © 2016 Vasile Croitoru. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
@@ -15,7 +8,6 @@
 @property (nonatomic, strong, readonly) NSString *privateKey;
 @property (nonatomic, strong) NSString *(^calculateMD5)(NSString *);
 
--(NSString *) MD5OfString:(NSString *)str;
 -(NSString *) urlParameters;
 
 @end
