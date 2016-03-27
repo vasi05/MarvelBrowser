@@ -78,6 +78,7 @@
 			children = (
 				94E693AF1CA688810011F511 /* MarvelBrowser */,
 				94E693AE1CA688810011F511 /* Products */,
+				94EDD0001CA87CD10076692F /* MarvelBrowserTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +102,8 @@
 				94EDCFFB1CA82C470076692F /* MarvelKeys.m */,
 				94E693B61CA688810011F511 /* ViewController.h */,
 				94E693B71CA688810011F511 /* ViewController.m */,
-				94E693CD1CA688810011F511 /* MarvelBrowserTests.m */,
-				94EDCFF51CA826940076692F /* VSMarvelAuthentificationTests.m */,
 				94EDCFF71CA8274F0076692F /* VSMarvelAuthentification.h */,
 				94EDCFF81CA8274F0076692F /* VSMarvelAuthentification.m */,
-				94E693CF1CA688810011F511 /* Info-Tests.plist */,
 				94E693C41CA688810011F511 /* Info.plist */,
 				94E693BF1CA688810011F511 /* Assets.xcassets */,
 				94E693B01CA688810011F511 /* Supporting Files */,
@@ -122,6 +120,17 @@
 				94E693B11CA688810011F511 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94EDD0001CA87CD10076692F /* MarvelBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				94E693CD1CA688810011F511 /* MarvelBrowserTests.m */,
+				94EDCFF51CA826940076692F /* VSMarvelAuthentificationTests.m */,
+				94E693CF1CA688810011F511 /* Info-Tests.plist */,
+			);
+			name = MarvelBrowserTests;
+			path = MarvelBrowser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
