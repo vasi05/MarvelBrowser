@@ -9,6 +9,12 @@
 #import <XCTest/XCTest.h>
 #import "VSMarvelAuthentification.h"
 
+@interface VSMarvelAuthentification (Testing)
+@property (nonatomic, strong, readwrite) NSString *timeStamp;
+@property (nonatomic, strong, readwrite) NSString *publicKey;
+@property (nonatomic, strong, readwrite) NSString *privateKey;
+@end
+
 @interface VSMarvelAuthentificationTests : XCTestCase
 
 @end
@@ -21,6 +27,22 @@
     [super setUp];
     sut = [[VSMarvelAuthentification alloc] init];
 }
+
+-(void)testMD5String_ShouldYeldKnownResult{
+    
+    NSString * md5String = [sut MD5OfString:@"abc"];
+    
+    XCTAssertEqualObjects(md5String, @"900150983cd24fb0d6963f7d28e17f72");
+}
+
+-(void)testTimeStampedKeys_ShouldConcatenateTimeStampPrivateKeyPublicKey{
+    
+    sut.timeStamp = @"TimeStamp";
+    sut.privateKey = @"Private";
+    sut.publicKey = @"Public";
+
+    XCTAssertEqualObjects(sut.timeStampedKeys, @"TimeStampPrivatePublic");
+ }
 
 -(void)testTimeStamp_ShouldChangeAcrossDiferentInstances{
     
