@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94B11AB91CB18C4700709753 /* AcceptanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B11AB81CB18C4700709753 /* AcceptanceTests.m */; };
 		94E693B21CA688810011F511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E693B11CA688810011F511 /* main.m */; };
 		94E693B51CA688810011F511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E693B41CA688810011F511 /* AppDelegate.m */; };
 		94E693B81CA688810011F511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E693B71CA688810011F511 /* ViewController.m */; };
@@ -22,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		94B11ABB1CB18C4700709753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94E693A51CA688810011F511 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94E693AC1CA688810011F511;
+			remoteInfo = MarvelBrowser;
+		};
 		94E693CA1CA688810011F511 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 94E693A51CA688810011F511 /* Project object */;
@@ -32,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94B11AB61CB18C4700709753 /* AcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B11AB81CB18C4700709753 /* AcceptanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcceptanceTests.m; sourceTree = "<group>"; };
+		94B11ABA1CB18C4700709753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94E693AD1CA688810011F511 /* MarvelBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E693B11CA688810011F511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94E693B31CA688810011F511 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		94B11AB31CB18C4700709753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94E693AA1CA688810011F511 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,12 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94B11AB71CB18C4700709753 /* AcceptanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				94B11AB81CB18C4700709753 /* AcceptanceTests.m */,
+				94B11ABA1CB18C4700709753 /* Info.plist */,
+			);
+			path = AcceptanceTests;
+			sourceTree = "<group>";
+		};
 		94E693A41CA688810011F511 = {
 			isa = PBXGroup;
 			children = (
 				94E693AF1CA688810011F511 /* MarvelBrowser */,
-				94E693AE1CA688810011F511 /* Products */,
+				94B11AB71CB18C4700709753 /* AcceptanceTests */,
 				94EDD0001CA87CD10076692F /* MarvelBrowserTests */,
+				94E693AE1CA688810011F511 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +115,7 @@
 			children = (
 				94E693AD1CA688810011F511 /* MarvelBrowser.app */,
 				94E693C91CA688810011F511 /* MarvelBrowserTests.xctest */,
+				94B11AB61CB18C4700709753 /* AcceptanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +165,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		94B11AB51CB18C4700709753 /* AcceptanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94B11ABF1CB18C4700709753 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */;
+			buildPhases = (
+				94B11AB21CB18C4700709753 /* Sources */,
+				94B11AB31CB18C4700709753 /* Frameworks */,
+				94B11AB41CB18C4700709753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94B11ABC1CB18C4700709753 /* PBXTargetDependency */,
+			);
+			name = AcceptanceTests;
+			productName = AcceptanceTests;
+			productReference = 94B11AB61CB18C4700709753 /* AcceptanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		94E693AC1CA688810011F511 /* MarvelBrowser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94E693D21CA688810011F511 /* Build configuration list for PBXNativeTarget "MarvelBrowser" */;
@@ -180,6 +227,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Vasile Croitoru";
 				TargetAttributes = {
+					94B11AB51CB18C4700709753 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 94E693AC1CA688810011F511;
+					};
 					94E693AC1CA688810011F511 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -204,11 +255,19 @@
 			targets = (
 				94E693AC1CA688810011F511 /* MarvelBrowser */,
 				94E693C81CA688810011F511 /* MarvelBrowserTests */,
+				94B11AB51CB18C4700709753 /* AcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		94B11AB41CB18C4700709753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94E693AB1CA688810011F511 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +288,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		94B11AB21CB18C4700709753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B11AB91CB18C4700709753 /* AcceptanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94E693A91CA688810011F511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +322,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		94B11ABC1CB18C4700709753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94E693AC1CA688810011F511 /* MarvelBrowser */;
+			targetProxy = 94B11ABB1CB18C4700709753 /* PBXContainerItemProxy */;
+		};
 		94E693CB1CA688810011F511 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 94E693AC1CA688810011F511 /* MarvelBrowser */;
@@ -282,6 +354,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		94B11ABD1CB18C4700709753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AcceptanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasile.test.AcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelBrowser.app/MarvelBrowser";
+			};
+			name = Debug;
+		};
+		94B11ABE1CB18C4700709753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AcceptanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vasile.test.AcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelBrowser.app/MarvelBrowser";
+			};
+			name = Release;
+		};
 		94E693D01CA688810011F511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,6 +507,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		94B11ABF1CB18C4700709753 /* Build configuration list for PBXNativeTarget "AcceptanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B11ABD1CB18C4700709753 /* Debug */,
+				94B11ABE1CB18C4700709753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		94E693A81CA688810011F511 /* Build configuration list for PBXProject "MarvelBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

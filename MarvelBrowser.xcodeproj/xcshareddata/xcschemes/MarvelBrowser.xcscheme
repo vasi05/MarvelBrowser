@@ -38,6 +38,16 @@
                ReferencedContainer = "container:MarvelBrowser.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "94B11AB51CB18C4700709753"
+               BuildableName = "AcceptanceTests.xctest"
+               BlueprintName = "AcceptanceTests"
+               ReferencedContainer = "container:MarvelBrowser.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
